@@ -55,7 +55,10 @@
         leave-from-class="translate-y-0"
         leave-to-class="-translate-y-full"
       >
-        <div v-if="isOpen" class="py-2">
+        <div
+          v-if="isOpen"
+          class="py-2"
+        >
           <slot name="default" />
         </div>
       </transition>
