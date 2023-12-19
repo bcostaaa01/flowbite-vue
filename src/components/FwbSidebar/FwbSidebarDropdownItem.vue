@@ -45,7 +45,7 @@
       </slot>
     </button>
 
-    <div class="py-2 space-y-2 z-0 overflow-hidden">
+    <div class="space-y-2 z-0 overflow-hidden">
       <transition
         :duration="150"
         enter-from-class="-translate-y-full"
@@ -55,7 +55,7 @@
         leave-from-class="translate-y-0"
         leave-to-class="-translate-y-full"
       >
-        <div v-if="isOpen">
+        <div v-if="isOpen" class="py-2">
           <slot name="default" />
         </div>
       </transition>
